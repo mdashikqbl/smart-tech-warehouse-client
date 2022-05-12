@@ -1,0 +1,36 @@
+.ip-color{
+    color: rgb(134, 218, 177);
+    font-weight: 700;
+}
+
+
+.font-color{
+    color:rgb(17, 12, 12);
+    font-weight: 700;
+
+}
+.one-color{
+    color:rgb(89, 206, 206);
+    font-weight: 700;
+    
+
+}
+
+@media screen  and (max-width:567px) {
+    img{
+
+        height: fit-content;
+    }
+    .iphone{
+        display: none;
+    }
+.samsung   {
+  display: none;
+
+}
+.oneplus{
+    display: none;
+}
+   
+    
+}
