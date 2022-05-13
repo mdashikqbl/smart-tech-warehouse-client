@@ -3,38 +3,37 @@ import './Information.css'
 
 const Information = () => {
     return (
-        <div className='background'>
-            <div className="infom-text">
-                <h2>ABOUT US</h2>
-                <h2>INFORMATION</h2>
-                <h2>WEREHOUSE OFFICE</h2>
-            </div>
-            <div className='text-info'>
-                <div className='about'>
-                    <h1>Smart Tech</h1>
-                    <p>Smart warehouses are inspired by smart factories and adopt a similar  environment. They incorporate various automated and interconnected technologies to create a environment in  can be recognized and prepped for shipment automatically</p>
-                </div>
-                <div className='information-info'>
-                    <div>
-                        <li>About Us</li>
-                        <li>Cart</li>
-                        <li>Contact</li>
-                        <li>Our Services</li>
-                        <li>Contact</li>
+        <div className='newsletter-info' >
+            <h1>NEWSLETTER</h1>
+            <p>Sign up for newsletter to receive special offers and exclusive news about SmartTech products </p>
+            <div className='input-btn'><input type="text" /><button>SUBSCRIBE</button></div>
+            <hr className='line' />
+            <div className="house-info" >
+                <div>
+                    <h4>SUPPLIERS SERVICE</h4>
+                    <ol>Contact us</ol>
+                    <ol>Help and advice</ol>
+                    <ol>Terms and conditions</ol>
+                    <ol>Refund Policy</ol>
+                    <ol>Technical Support</ol>
 
-                    </div>
-                    <div>
-                        <li>Classic Blog</li>
-                        <li>Checkout</li>
-                        <li>My Account</li>
-                        <li>Shop</li>
-                        <li>Classic Blog</li>
-                    </div>
                 </div>
-                <div className='werehouse-info'>
-                    <li><img src="" alt="" />
-                        14 Tottenham Road, London, England.
-                    </li>
+                <div>
+                    <h4>INFORMATION</h4>
+                    <ol>About Us</ol>
+                    <ol>Testimonials</ol>
+                    <ol>Payments & Returns</ol>
+                    <ol>My Account</ol>
+                    <ol>View Catalogues Online</ol>
+
+                </div>
+                <div>
+                    <h4>ABOUT US</h4>
+                    <ol>Who We Are ?</ol>
+                    <ol>Corporate Responsibility</ol>
+                    <ol>Bangladesh Laws</ol>
+                    <ol>Careers</ol>
+                    <ol>Privacy Policy</ol>
                 </div>
             </div>
         </div>

@@ -1,65 +1,61 @@
-.background{
-    margin-top: 100px;
-    background-color: black;
+.newsletter-info{
+    
+    background-color:black ;
+    margin-top: 80px;
 }
-
-.infom-text{
-    margin-left: 100px;
-    margin-top: 20px;
-   display: grid;
-   grid-template-columns: repeat(3, 1fr);
+.newsletter-info h1  {
+   color: #fff;
+    text-align: center;
+   
 }
-.infom-text h2{
-    background-color:#c71f25d5;
+.newsletter-info p{
+    text-align: center;
     color: #fff;
-    width: 300px;
-    height: 50px;
-    transform:skew(15deg);
-    font-family: 'Staatliches';
-    
 }
-.infom-text h2{
-    display: flex;
+
+.newsletter-info .input-btn{
+   
+    display:flex;
     justify-content: center;
-    align-items: center;
 }
-.background .text-info{
-    display: flex;
+.newsletter-info input {
+   border: 0;
+   width: 350px;
+   margin-bottom: 20px;
+   border-radius: 8px  0px 0px 8px;
+}
+.newsletter-info button{
+    background-color: #C73438;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 10px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    border: 0;
+    border-radius:0px 8px 8px 0px ;
+}
+.line{
+    color: gray;
 }
 
-.text-info .about{
-    width: 800px;
-   
+.house-info{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 120px;
 }
-.text-info .about{
-   margin-left: 120px;
+.house-info h4{
+    color: #fff;
 }
-
-.information-info{
-    display: flex;
-   justify-content: space-evenly;
-}
-.information-info{
-    margin-right: 100px;
+.house-info ol{
+    color: #fff;
 }
 
 
-.text-info .information-info{
-   
-    width: 800px;
+
+@media screen  and (max-width:567px) {
+    .house-info{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
     
 }
-.information-info li {
-    list-style: none;
-    margin-top: 10px;
-}
-
-.text-info .werehouse-info{
-    width: 850px;
-}
-
-
-
-
-/* media query */
-@
