@@ -1,0 +1,26 @@
+.footer-style{
+    background-color: #F0F2F5;
+    height: 80px;
+
+
+}
+
+.icons{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.icons img{
+    width: 20px;
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.align{
+    
+    margin-top: 15px;
+    text-align: center;
+}

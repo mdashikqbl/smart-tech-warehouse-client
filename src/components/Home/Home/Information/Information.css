@@ -1,0 +1,65 @@
+.background{
+    margin-top: 100px;
+    background-color: black;
+}
+
+.infom-text{
+    margin-left: 100px;
+    margin-top: 20px;
+   display: grid;
+   grid-template-columns: repeat(3, 1fr);
+}
+.infom-text h2{
+    background-color:#c71f25d5;
+    color: #fff;
+    width: 300px;
+    height: 50px;
+    transform:skew(15deg);
+    font-family: 'Staatliches';
+    
+}
+.infom-text h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.background .text-info{
+    display: flex;
+}
+
+.text-info .about{
+    width: 800px;
+   
+}
+.text-info .about{
+   margin-left: 120px;
+}
+
+.information-info{
+    display: flex;
+   justify-content: space-evenly;
+}
+.information-info{
+    margin-right: 100px;
+}
+
+
+.text-info .information-info{
+   
+    width: 800px;
+    
+}
+.information-info li {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.text-info .werehouse-info{
+    width: 850px;
+}
+
+
+
+
+/* media query */
+@
