@@ -4,9 +4,10 @@ import './Information.css'
 const Information = () => {
     return (
         <div className='newsletter-info' >
-            <h1>NEWSLETTER</h1>
+            <h1 className='newsh1'>NEWSLETTER</h1>
             <p>Sign up for newsletter to receive special offers and exclusive news about SmartTech products </p>
-            <div className='input-btn'><input type="text" /><button>SUBSCRIBE</button></div>
+            <div className='input-btn'><input type="email" name="email" required id="" placeholder="Enter your email" /><button>SUBSCRIBE</button></div>
+
             <hr className='line' />
             <div className="house-info" >
                 <div>
