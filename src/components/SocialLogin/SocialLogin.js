@@ -3,7 +3,11 @@ import React from 'react';
 const SocialLogin = () => {
     return (
         <div>
-            <h4>social login in google</h4>
+            <div className='google-btn'>
+                <div className='btn-img'>
+                    <button><img src="https://i.ibb.co/6YJNJwr/google-1.png" alt="" /> <p>Continue With Google</p></button>
+                </div>
+            </div>
         </div>
     );
 };

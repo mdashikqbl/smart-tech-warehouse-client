@@ -29,6 +29,7 @@
 }
 
 .input-group input{
+    font-size: 21px;
     height: 55px;
     width: 390px;
     margin-top: 35px;
@@ -45,7 +46,7 @@
     
 }
 .input-group input::placeholder{
-    font-weight: 700;
+    font-weight: 600;
    text-indent: 20px;
 }
 
@@ -72,4 +73,103 @@
     display: flex;
     justify-content: center;
     
+}
+
+.or-style{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.midddle-or{
+    font-weight: 600;
+    font-size: 21px;
+}
+.line-start{
+    background-color: #57B846;
+    height: 1px;
+    width: 150px;
+    margin-right: 10px;
+}
+.line-end{
+    background-color: #57B846;
+    height: 1px;
+    width: 150px;
+    margin-left: 10px;
+}
+
+.google-btn button{
+    width: 390px;
+    height: 55px; 
+}
+.google-btn img{
+    width: 35px;
+    
+}
+
+.google-btn button{
+    background-color: #57B846;
+    color: #fff;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 12px;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+.btn-img p{
+    margin-top: 14px;
+    margin-left: 14px;
+   
+}
+.btn-img button{
+    border: 0;
+
+}
+
+.move-signup{
+    margin-top: 50px ;
+    text-align: center;
+}
+.move-signup h6{
+    color: #57B846;
+    font-weight: 700;
+}
+.move-signup h6:hover{
+    color: #1D3B16;
+}
+
+@media screen  and (max-width:567px) {
+
+    .form-container{
+        width: 350px;
+    }
+    .form-container h2{
+        width: 350px;
+        height: 100px;
+    }
+    .input-group input{
+        width: 300px;
+    }
+    .input-submit input{
+        width: 300px;
+    }
+    .google-btn button{
+        width:300px;
+    }
+    .line-start{
+        width: 110px;
+    }
+    .line-end{
+        width: 110px;
+    }
+
+
 }

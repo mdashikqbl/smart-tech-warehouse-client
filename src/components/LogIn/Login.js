@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import SocialLogin from '../SocialLogin/SocialLogin';
 import './Login.css';
 
 const Login = () => {
@@ -18,6 +18,18 @@ const Login = () => {
                     <div className="input-submit">
                         <input type="submit" value="Login" />
                     </div>
+
+                    <div className='or-style'>
+                        <div className='line-start'></div>
+                        <div className='midddle-or'>or</div>
+                        <div className='line-end'></div>
+                    </div>
+                    <SocialLogin></SocialLogin>
+                    <div className='move-signup'>
+                        <p>Don’t have an account?</p>
+                        <h6 className='btn-link d-block text-decoration-none '>SIGN UP NOW</h6>
+                    </div>
+
                 </div>
 
             </div>
