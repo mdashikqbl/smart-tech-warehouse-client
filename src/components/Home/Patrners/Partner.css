@@ -1,9 +1,10 @@
 .text-style{
+    margin-top: 100px;
    font-family: 'Staatliches', cursive;
     text-align: center;
 }
 .partners{
-   margin-top: 5px;
+   margin-top: 20px;
     background-color: #EEEEEE;
     display: grid;
     grid-template-columns: repeat(3, 1fr);

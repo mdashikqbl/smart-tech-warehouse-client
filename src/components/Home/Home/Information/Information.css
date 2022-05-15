@@ -11,6 +11,7 @@
 .newsletter-info p{
     text-align: center;
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 
 .newsletter-info .input-btn{
@@ -48,12 +49,13 @@
 }
 .house-info h4{
     color: #fff;
+    font-family: 'Poppins', sans-serif;
 }
 .house-info ol{
     color: #fff;
+    font-family: 'Poppins', sans-serif;
+
 }
-
-
 
 @media screen  and (max-width:567px) {
     .house-info{

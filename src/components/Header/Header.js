@@ -1,26 +1,40 @@
 import React from 'react';
 import './Header.css'
 import { Container, Nav, Navbar } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
+import auth from '../../firebase.init';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { signOut } from 'firebase/auth';
 
 const Header = () => {
+    const [user] = useAuthState(auth);
+    const handleSignOut = () => {
+        signOut(auth);
+
+    }
     return (
         <>
             <Navbar collapseOnSelect expand="lg" sticky='top' bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">Smart Tech</Navbar.Brand>
+                    <Navbar.Brand as={Link} to="/">Smart Tech</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link as={Link} to="/home">Home</Nav.Link>
+                            <Nav.Link href="home#inventory">Inventory</Nav.Link>
 
                         </Nav>
                         <Nav>
-                            <Nav.Link href="/blog">Blog</Nav.Link>
-                            <Nav.Link href='/login' >Login</Nav.Link>
-                            <Nav.Link eventKey={2} href="#memes">
-                                Dank memes
-                            </Nav.Link>
+                            <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+                            <Nav.Link href='/' ></Nav.Link>
+                            {
+                                user ?
+                                    <button className='sign-btn' onClick={handleSignOut}>Sign Out</button>
+                                    :
+
+                                    <Nav.Link as={Link} to="login">
+                                        Login
+                                    </Nav.Link>}
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

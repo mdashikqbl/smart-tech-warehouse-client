@@ -1,0 +1,30 @@
+.inventory-title h1 {
+    font-family: 'Staatliches', cursive;
+    margin-top: 100px;
+    text-align: center;
+   
+}
+.inventorys-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    margin-left: 50px;
+}
+
+@media screen and (max-width:567px) {
+    .inventorys-container{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+    .inventorys-container{
+        margin: 0;
+       
+    }
+    .inventorys-container{
+        margin-left:22px ;
+    }
+}
+    
+

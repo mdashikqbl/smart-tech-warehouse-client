@@ -20,7 +20,7 @@
 
 .form-container{ 
     width: 500px;
-    height: 675px;
+    height: 750px;
     margin: 0  auto;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
@@ -67,7 +67,7 @@
     font-family: 'Poppins', sans-serif;
 }
 .input-submit input:hover{
-    background-color: #1D3B16;
+    background-color: #1D3B16;  
 }
 .input-submit{
     display: flex;
@@ -133,16 +133,24 @@
     border: 0;
 
 }
+.form-container p{
+    font-family: 'Poppins', sans-serif;
+}
 
 .move-signup{
     margin-top: 50px ;
     text-align: center;
 }
-.move-signup h6{
+.move-signup p{
+    font-family: 'Poppins', sans-serif;
+
+}
+.move-signup a{
     color: #57B846;
     font-weight: 700;
+    
 }
-.move-signup h6:hover{
+.move-signup a:hover{
     color: #1D3B16;
 }
 

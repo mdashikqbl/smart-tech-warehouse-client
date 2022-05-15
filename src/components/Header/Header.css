@@ -1,0 +1,13 @@
+.sign-btn{
+    background-color: #57B846;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
+    border-radius: 5px;
+    padding: 5px 10px;
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+}
+.navbg {
+    background-color: #57B846;
+    color: #fff;
+}
