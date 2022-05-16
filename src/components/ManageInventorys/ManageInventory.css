@@ -1,0 +1,31 @@
+.manageInventory-title h1{
+    font-family: 'Staatliches', cursive;
+    margin-top: 50px;
+    text-align: center;
+}
+ .addItems-inventory{
+    text-align: center;
+    
+}
+.addItems-inventory button{
+    padding: 5px 100px;
+    border: 0;
+   margin-bottom: 50px;
+}
+
+ .manageInventory-container{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px
+}; 
+    
+@media screen and (max-width:567px) {
+    .manageInventory-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    
+}

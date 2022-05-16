@@ -1,0 +1,23 @@
+.restock-field{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+
+     
+}
+.restock-field input{
+    padding: 10px 20px;
+    border-radius: 10px 0px 0px 10px;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.restock-field .submit-btn{
+    font-weight: 500;
+    border: 0;
+    background-color: #57B846;
+   color: #fff;
+   border-radius: 0px 10px 10px 0px;
+}

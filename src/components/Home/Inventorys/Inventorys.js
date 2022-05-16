@@ -9,9 +9,9 @@ const Inventorys = () => {
     return (
         <div id='inventory' className='inventory-title'>
             <h1>Inventory</h1>
-            <div className='inventorys-container'>
+            <div id='responsive' className='inventorys-container'>
                 {
-                    sixInventorys.map(inventory => <Inventory key={inventory._id} inventory={inventory} ></Inventory>)
+                    sixInventorys.map(inventory => <Inventory key={inventory._id} inventory={inventory}  ></Inventory>)
                 }
             </div>
         </div>

@@ -6,7 +6,7 @@ import './Login.css';
 import auth from '../../firebase.init';
 
 const Login = () => {
-    // const [user] = useAuthState(auth);
+    const [user1] = useAuthState(auth);
     const navigate = useNavigate();
     const emailRef = useRef('');
     const passwordRef = useRef('');
