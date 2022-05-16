@@ -9,6 +9,7 @@
 }
 .singleInventoryDetail{
     margin-top: 50px;
+    margin-bottom: 80px;
 }
 .singleInventoryDetail img{
     width: 200px;
@@ -58,4 +59,22 @@
     background-color: #57B846;
    color: #fff;
    border-radius: 0px 10px 10px 0px;
+}
+.singleInventoryDetail-container .manage-btninventory{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.singleInventoryDetail-container .manage-btninventory{
+    margin-top: 100px;
+    
+
+}
+.singleInventoryDetail-container button{
+    background-color: #57B846;
+    padding: 10px 60px;
+    border: 0;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;   
+   
 }

@@ -8,7 +8,24 @@ const ManageInventory = () => {
     const [manageInventorys, setManageInventorys] = useInventorys([]);
     const navigate = useNavigate()
     const handleaToAddItems = () => {
-        navigate('/additems')
+        navigate('/additem')
+    }
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you sure?');
+        if (proceed) {
+            const url = `https://shrouded-chamber-00283.herokuapp.com/inventory/${id}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+                    console.log(data);
+                    const remaining = manageInventorys.filter(manageInventorys => manageInventorys._id !== id)
+                    setManageInventorys(remaining)
+                })
+        }
+
+
     }
 
     return (
@@ -17,7 +34,8 @@ const ManageInventory = () => {
 
             <div className='manageInventory-container'>
                 {
-                    manageInventorys.map(manageInventory => <SingleManageInventory key={manageInventory._id} manageInventory={manageInventory}></SingleManageInventory>)
+                    manageInventorys.map(manageInventory => <SingleManageInventory key={manageInventory._id} manageInventory={manageInventory}
+                        handleDelete={handleDelete} ></SingleManageInventory>)
                 }
             </div>
 

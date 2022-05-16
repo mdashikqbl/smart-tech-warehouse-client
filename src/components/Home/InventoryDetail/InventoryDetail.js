@@ -22,7 +22,7 @@ const InventoryDetail = () => {
     const { img, name, price, quantity, suppliername, descripation } = inventory;
 
     return (
-        <div>
+        <div className='singleInventoryDetail-container'>
             <div className='singleInventoryDetail'>
                 <div>
                     <div className='text-center mb-3'><img src={img} alt="" /></div>
@@ -39,8 +39,8 @@ const InventoryDetail = () => {
                 <input className='number-field' type="number" name="number" />
                 <input className='submit-btn' type="submit" value="Restock" />
             </div>
-            <div>
-                <button className='' onClick={navigateTomanage} >Manage Inventorys</button>
+            <div className='manage-btninventory'>
+                <button onClick={navigateTomanage} >Manage Inventorys</button>
             </div>
         </div>
     );

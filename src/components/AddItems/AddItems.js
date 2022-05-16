@@ -22,7 +22,7 @@ const AddItems = () => {
     };
     return (
         <div>
-            <h1 className='add-title'>AddItems to Inventory</h1>
+            <h1 className='add-title'>AddItem to Inventory</h1>
             <div className='items-field' >
                 <form className='form-control' onSubmit={handleSubmit(onSubmit)}>
                     <input placeholder='name' {...register("name", { required: true, maxLength: 20 })} />
@@ -31,7 +31,7 @@ const AddItems = () => {
                     <input placeholder='price' type="number" {...register("price")} />
                     <input placeholder='quantity' type="number" {...register("quantity")} />
                     <input placeholder='Photo URL' type="text" {...register("img")} />
-                    <input className='add-items' type="submit" value="AddItems" />
+                    <input className='add-items' type="submit" value="AddItem" />
                 </form>
             </div>
         </div>

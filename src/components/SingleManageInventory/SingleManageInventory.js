@@ -1,9 +1,10 @@
 import React from 'react';
 import './SingleManageInventory.css'
 
+const SingleManageInventory = ({ manageInventory, handleDelete }) => {
 
-const SingleManageInventory = ({ manageInventory }) => {
-    const { img, name, price, quantity, suppliername, descripation } = manageInventory;
+    const { _id, img, name, price, quantity, suppliername, descripation } = manageInventory;
+
     return (
         <div className='SingleManageInventory-container'>
             <div>
@@ -15,7 +16,7 @@ const SingleManageInventory = ({ manageInventory }) => {
                 <p>{descripation}</p>
 
             </div>
-            <button >Delete</button>
+            <button onClick={() => handleDelete(_id)}>Delete</button>
         </div>
     );
 };
