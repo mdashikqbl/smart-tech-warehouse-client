@@ -1,0 +1,49 @@
+.items-field{
+
+    width: 600px;
+    height: 550px;
+    margin:  0 auto;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    margin-bottom: 50px;
+
+}
+
+.add-title{
+    font-family: 'Staatliches', cursive;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center
+}
+.items-field .form-control{
+    border: 0;   
+}
+.items-field input{
+    width: 500px;
+    display: block;
+    margin: 0 auto;
+    text-indent: 20px;
+    
+}
+.items-field input{
+
+    padding: 10px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    
+}
+.items-field .add-items{
+    margin-top: 40px;
+    width: 350px;
+    background-color: #57B846;
+    border: 0;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 500;
+    border-radius: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+ .add-items:hover {
+    background-color:  #1D3B16;
+}

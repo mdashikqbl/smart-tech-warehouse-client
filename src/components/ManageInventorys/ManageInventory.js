@@ -2,9 +2,14 @@ import React from 'react';
 import './ManageInventory.css'
 import useInventorys from '../../Hooks/UseInventorys';
 import SingleManageInventory from '../SingleManageInventory/SingleManageInventory';
+import { useNavigate } from 'react-router-dom';
 
 const ManageInventory = () => {
     const [manageInventorys, setManageInventorys] = useInventorys([]);
+    const navigate = useNavigate()
+    const handleaToAddItems = () => {
+        navigate('/additems')
+    }
 
     return (
         <div className='manageInventory-title'>
@@ -17,7 +22,7 @@ const ManageInventory = () => {
             </div>
 
             <div className='addItems-inventory' >
-                <button >Add Items</button>
+                <button onClick={handleaToAddItems} >Add Items</button>
             </div>
         </div>
     );

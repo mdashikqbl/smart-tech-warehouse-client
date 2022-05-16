@@ -8,9 +8,17 @@
     
 }
 .addItems-inventory button{
-    padding: 5px 100px;
+    padding: 8px 120px;
     border: 0;
    margin-bottom: 50px;
+   background-color: #57B846;
+   color: #fff;
+   border-radius: 5px;
+   font-weight: 500;
+   font-family: 'Poppins', sans-serif;
+}
+.addItems-inventory button:hover{
+    background-color: #1D3B16;
 }
 
  .manageInventory-container{
