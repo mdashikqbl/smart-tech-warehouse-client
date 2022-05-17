@@ -36,8 +36,10 @@ const InventoryDetail = () => {
                 <button>Deliverd</button>
             </div>
             <div className='restock-field'>
-                <input className='number-field' type="number" name="number" />
-                <input className='submit-btn' type="submit" value="Restock" />
+                <form >
+                    <input className='number-field' type="number" name="number" />
+                    <input className='submit-btn' type="submit" value="Restock" />
+                </form>
             </div>
             <div className='manage-btninventory'>
                 <button onClick={navigateTomanage} >Manage Inventorys</button>
