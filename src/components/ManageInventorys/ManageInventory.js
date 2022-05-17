@@ -40,7 +40,7 @@ const ManageInventory = () => {
             </div>
 
             <div className='addItems-inventory' >
-                <button onClick={handleaToAddItems} >Add Items</button>
+                <button onClick={handleaToAddItems} >Add New Items</button>
             </div>
         </div>
     );

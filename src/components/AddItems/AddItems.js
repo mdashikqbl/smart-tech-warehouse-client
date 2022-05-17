@@ -1,8 +1,10 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
 import './AddItems.css';
 import { useForm } from "react-hook-form";
-
+import auth from '../../firebase.init';
 const AddItems = () => {
+    const [user] = useAuthState(auth)
     const { register, handleSubmit } = useForm();
     const onSubmit = data => {
         console.log(data);
@@ -17,6 +19,7 @@ const AddItems = () => {
             .then(res => res.json())
             .then(result => {
                 console.log(result);
+
             })
 
     };
@@ -33,9 +36,11 @@ const AddItems = () => {
                     <input placeholder='Photo URL' type="text" {...register("img")} />
                     <input className='add-items' type="submit" value="AddItem" />
                 </form>
+
             </div>
         </div>
     );
 };
+
 
 export default AddItems;
