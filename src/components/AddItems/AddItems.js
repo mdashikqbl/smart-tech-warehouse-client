@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
 const AddItems = () => {
     const [user] = useAuthState(auth)
-    const { register, handleSubmit } = useForm();
+    const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
         console.log(data);
         const url = `https://shrouded-chamber-00283.herokuapp.com/inventory`;
@@ -18,8 +18,10 @@ const AddItems = () => {
         })
             .then(res => res.json())
             .then(result => {
+
                 console.log(result);
 
+                reset();
             })
 
     };
@@ -32,7 +34,8 @@ const AddItems = () => {
                     <input placeholder='suppliername' {...register("suppliername", { required: true, maxLength: 20 })} />
                     <input placeholder='descripation' {...register("descripation")} />
                     <input placeholder='price' type="number" {...register("price")} />
-                    <input placeholder='quantity' type="number" {...register("quantity")} />
+                    < input placeholder='quantity' type="number" {...register("quantity")} />
+                    <input value={user?.email} type="email" {...register("email")} />
                     <input placeholder='Photo URL' type="text" {...register("img")} />
                     <input className='add-items' type="submit" value="AddItem" />
                 </form>

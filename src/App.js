@@ -12,10 +12,14 @@ import ManageInventory from './components/ManageInventorys/ManageInventory';
 import MyItem from './components/MyItem/MyItem';
 import RequireAuth from './components/RequireAuth/RequireAuth';
 import SignUp from './components/SignUp/SignUp';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 function App() {
   return (
     <div >
+      <ToastContainer />
       <Header></Header>
       <Routes>
         <Route path='/' element={<Home></Home>}></Route>

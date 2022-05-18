@@ -1,12 +1,11 @@
-import React from 'react';
-import useInventorys from '../../Hooks/UseInventorys';
+import React, { useState } from 'react';
 import auth from '../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 const MyItem = () => {
     const [user] = useAuthState(auth)
-    const [myItem, setItem] = useInventorys([]);
-    const email = user.email
+    const [myItem, setItem] = useState([]);
+    const email = user?.email
     const url = `https://shrouded-chamber-00283.herokuapp.com/myItemInvemtory?email=${email}`
     fetch(url)
         .then(res => res.json())
