@@ -3,11 +3,11 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import './AddItems.css';
 import { useForm } from "react-hook-form";
 import auth from '../../firebase.init';
+
 const AddItems = () => {
     const [user] = useAuthState(auth)
     const { register, handleSubmit, reset } = useForm();
     const onSubmit = data => {
-        console.log(data);
         const url = `https://shrouded-chamber-00283.herokuapp.com/inventory`;
         fetch(url, {
             method: 'POST',
@@ -38,6 +38,7 @@ const AddItems = () => {
                     <input value={user?.email} type="email" {...register("email")} />
                     <input placeholder='Photo URL' type="text" {...register("img")} />
                     <input className='add-items' type="submit" value="AddItem" />
+
                 </form>
 
             </div>

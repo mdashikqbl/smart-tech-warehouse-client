@@ -1,18 +1,51 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import auth from '../../firebase.init';
 import { useAuthState } from 'react-firebase-hooks/auth';
+import SingleMyItem from '../SingleMyItem/SingleMyItem';
 
 const MyItem = () => {
     const [user] = useAuthState(auth)
-    const [myItem, setItem] = useState([]);
-    const email = user?.email
-    const url = `https://shrouded-chamber-00283.herokuapp.com/myItemInvemtory?email=${email}`
-    fetch(url)
-        .then(res => res.json())
-        .then(data => setItem(data))
+    const [myItems, setItems] = useState([]);
+
+    useEffect(() => {
+        const email = user?.email
+        fetch(`https://shrouded-chamber-00283.herokuapp.com/myItemInventory?email=${email}`, {
+            method: 'GET',
+            headers: {
+
+            }
+        })
+            .then(res => res.json())
+            .then(data => {
+                setItems(data)
+            })
+    }, [])
+    const handleDeleteMyItem = () => {
+        const proceed = window.confirm('Are you sure?');
+        if (proceed) {
+            const email = user?.email
+            const url = `https://shrouded-chamber-00283.herokuapp.com/myItemInventory?email=${email}`
+            fetch(url, {
+                method: 'DELETE'
+            })
+                .then(res => res.json())
+                .then(data => {
+
+                    const remaining = myItems.filter(myItems => myItems.email !== email)
+                    setItems(remaining)
+                })
+        }
+
+
+    }
     return (
-        <div>
-            <h1>{myItem.length}</h1>
+        <div className='inventory-title'>
+            <h1>MyItems</h1>
+            <div className='inventorys-container'>
+                {
+                    myItems.map(myitem => <SingleMyItem key={myitem._id} myitem={myitem} handleDeleteMyItem={handleDeleteMyItem} ></SingleMyItem>)
+                }
+            </div>
         </div>
     );
 };

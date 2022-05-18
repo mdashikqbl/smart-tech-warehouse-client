@@ -58,7 +58,7 @@ const InventoryDetail = () => {
             .then((response) => response.json())
             .then((json) => {
                 e.target.reset()
-                alert('Restock Success')
+                toast('Restock Success')
             }
             )
     }
