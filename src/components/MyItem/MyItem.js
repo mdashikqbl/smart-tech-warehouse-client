@@ -20,18 +20,17 @@ const MyItem = () => {
                 setItems(data)
             })
     }, [])
-    const handleDeleteMyItem = () => {
+    const handleDeleteMyItem = (id) => {
         const proceed = window.confirm('Are you sure?');
         if (proceed) {
-            const email = user?.email
-            const url = `https://shrouded-chamber-00283.herokuapp.com/myItemInventory?email=${email}`
+            const url = `https://shrouded-chamber-00283.herokuapp.com/inventory/${id}`
             fetch(url, {
                 method: 'DELETE'
             })
                 .then(res => res.json())
                 .then(data => {
 
-                    const remaining = myItems.filter(myItems => myItems.email !== email)
+                    const remaining = myItems.filter(myItems => myItems._id !== id)
                     setItems(remaining)
                 })
         }

@@ -2,7 +2,7 @@
 
 <h3>Live Website Link</h3>
 
-* 
+* https://soft-werehouse.web.app/ 
   
 <h3>Client Side Private repo link</h3>
 
